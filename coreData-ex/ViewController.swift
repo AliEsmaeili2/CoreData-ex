@@ -66,10 +66,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // MARK: Functions
     func fetchPeople() {
-        
+         
         do {
+            let request = Person.fetchRequest() as NSFetchRequest<Person>
             
-            self.items = try context.fetch(Person.fetchRequest())
+            let sort = NSSortDescriptor(key: "name", ascending: true)
+            request.sortDescriptors = [sort    ]
+            
+            self.items = try context.fetch(request)
             
             DispatchQueue.main.async {
                 
@@ -80,6 +84,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             print("Error fetchRequest!")
         }
+    }
+    
+    func relationship() {
+        
+        //create a family
+        let family = Family(context: context)
+        family.name = "esmaeili Family"
+        
+        //create a person
+        let person = Person(context: context)
+        person.name = "Alex"
+        person.family
+        
+        //add person to family
+        family.addToPeople(person)
+        
+        //save context
+        try! context.save()
+        
+        
     }
     
     // Swipe Action
