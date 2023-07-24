@@ -10,4 +10,13 @@
         <attribute name="sex" optional="YES" attributeType="String"/>
         <relationship name="family" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Family" inverseName="people" inverseEntity="Family"/>
     </entity>
+    <entity name="TextBoxCD" representedClassName="TextBoxCD" syncable="YES">
+        <attribute name="numberCD" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="passwordCD" optional="YES" attributeType="String"/>
+        <attribute name="userNameCD" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ToDoListItem" representedClassName="ToDoListItem" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
 </model>

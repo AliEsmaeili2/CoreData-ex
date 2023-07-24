@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13062B572A6D28D9003E85A1 /* TextBoxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13062B562A6D28D9003E85A1 /* TextBoxVC.swift */; };
+		13062B612A6D3C78003E85A1 /* TextBoxCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13062B5F2A6D3C78003E85A1 /* TextBoxCD+CoreDataClass.swift */; };
+		13062B622A6D3C78003E85A1 /* TextBoxCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13062B602A6D3C78003E85A1 /* TextBoxCD+CoreDataProperties.swift */; };
 		134B33542A5C2406004344DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B33532A5C2406004344DC /* AppDelegate.swift */; };
 		134B33562A5C2406004344DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B33552A5C2406004344DC /* SceneDelegate.swift */; };
 		134B33582A5C2406004344DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B33572A5C2406004344DC /* ViewController.swift */; };
@@ -18,9 +21,15 @@
 		1370F5902A62DE9C00C004DE /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370F58C2A62DE9C00C004DE /* Family+CoreDataProperties.swift */; };
 		1370F5912A62DE9C00C004DE /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370F58D2A62DE9C00C004DE /* Person+CoreDataClass.swift */; };
 		1370F5922A62DE9C00C004DE /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370F58E2A62DE9C00C004DE /* Person+CoreDataProperties.swift */; };
+		13AD9B432A62FD620017ACEE /* ToDoListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD9B412A62FD620017ACEE /* ToDoListItem+CoreDataClass.swift */; };
+		13AD9B442A62FD620017ACEE /* ToDoListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD9B422A62FD620017ACEE /* ToDoListItem+CoreDataProperties.swift */; };
+		13AD9B472A62FFF40017ACEE /* ToDoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD9B462A62FFF40017ACEE /* ToDoListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13062B562A6D28D9003E85A1 /* TextBoxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxVC.swift; sourceTree = "<group>"; };
+		13062B5F2A6D3C78003E85A1 /* TextBoxCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextBoxCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13062B602A6D3C78003E85A1 /* TextBoxCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextBoxCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		134B33502A5C2406004344DC /* coreData-ex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coreData-ex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		134B33532A5C2406004344DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		134B33552A5C2406004344DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +43,9 @@
 		1370F58C2A62DE9C00C004DE /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1370F58D2A62DE9C00C004DE /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1370F58E2A62DE9C00C004DE /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		13AD9B412A62FD620017ACEE /* ToDoListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13AD9B422A62FD620017ACEE /* ToDoListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		13AD9B462A62FFF40017ACEE /* ToDoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13062B632A6D3C81003E85A1 /* textBoxx */ = {
+			isa = PBXGroup;
+			children = (
+				13062B5F2A6D3C78003E85A1 /* TextBoxCD+CoreDataClass.swift */,
+				13062B602A6D3C78003E85A1 /* TextBoxCD+CoreDataProperties.swift */,
+			);
+			path = textBoxx;
+			sourceTree = "<group>";
+		};
 		134B33472A5C2406004344DC = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +90,11 @@
 				134B33532A5C2406004344DC /* AppDelegate.swift */,
 				134B33552A5C2406004344DC /* SceneDelegate.swift */,
 				134B33572A5C2406004344DC /* ViewController.swift */,
+				13AD9B462A62FFF40017ACEE /* ToDoListVC.swift */,
+				13062B562A6D28D9003E85A1 /* TextBoxVC.swift */,
 				1370F5822A62A2A700C004DE /* Model-CoreData */,
+				13AD9B452A62FD6D0017ACEE /* Model-ToDoList */,
+				13062B632A6D3C81003E85A1 /* textBoxx */,
 				134B33592A5C2406004344DC /* Main.storyboard */,
 				134B335F2A5C240A004344DC /* Assets.xcassets */,
 				134B33612A5C240A004344DC /* LaunchScreen.storyboard */,
@@ -88,6 +113,15 @@
 				1370F58E2A62DE9C00C004DE /* Person+CoreDataProperties.swift */,
 			);
 			path = "Model-CoreData";
+			sourceTree = "<group>";
+		};
+		13AD9B452A62FD6D0017ACEE /* Model-ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				13AD9B412A62FD620017ACEE /* ToDoListItem+CoreDataClass.swift */,
+				13AD9B422A62FD620017ACEE /* ToDoListItem+CoreDataProperties.swift */,
+			);
+			path = "Model-ToDoList";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +199,16 @@
 				1370F5912A62DE9C00C004DE /* Person+CoreDataClass.swift in Sources */,
 				1370F58F2A62DE9C00C004DE /* Family+CoreDataClass.swift in Sources */,
 				134B33542A5C2406004344DC /* AppDelegate.swift in Sources */,
+				13AD9B442A62FD620017ACEE /* ToDoListItem+CoreDataProperties.swift in Sources */,
+				13062B572A6D28D9003E85A1 /* TextBoxVC.swift in Sources */,
 				1370F5922A62DE9C00C004DE /* Person+CoreDataProperties.swift in Sources */,
+				13AD9B472A62FFF40017ACEE /* ToDoListVC.swift in Sources */,
 				1370F5902A62DE9C00C004DE /* Family+CoreDataProperties.swift in Sources */,
 				134B33562A5C2406004344DC /* SceneDelegate.swift in Sources */,
+				13062B612A6D3C78003E85A1 /* TextBoxCD+CoreDataClass.swift in Sources */,
 				134B335E2A5C2406004344DC /* coreData_ex.xcdatamodeld in Sources */,
+				13062B622A6D3C78003E85A1 /* TextBoxCD+CoreDataProperties.swift in Sources */,
+				13AD9B432A62FD620017ACEE /* ToDoListItem+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,12 +8,13 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
     
     // MARK: @IBOutlet
     @IBOutlet weak var tableView: UITableView!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     var items:[Person]?
     
     // MARK: viewDidLoad
@@ -66,12 +67,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // MARK: Functions
     func fetchPeople() {
-         
+        
         do {
             let request = Person.fetchRequest() as NSFetchRequest<Person>
             
             let sort = NSSortDescriptor(key: "name", ascending: true)
-            request.sortDescriptors = [sort    ]
+            request.sortDescriptors = [sort]
             
             self.items = try context.fetch(request)
             
@@ -102,9 +103,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //save context
         try! context.save()
-        
-        
     }
+}
+
+// MARK: Extension
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     // Swipe Action
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
